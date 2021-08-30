@@ -1,0 +1,30 @@
+.Item{
+    flex-grow: 1;
+
+    a{
+        display: inline-block;
+    }
+
+    .Item-img{
+        width: 200px;
+        height: 200px;
+        opacity: .5;
+    }
+    
+    .Item-name{
+        color: rgba(255,174,10);
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+
+    &.selected{
+        .Item-img{
+            opacity: 1;
+        }
+
+        .Item-name{
+            opacity: 1;
+            border-bottom: .2em solid rgb(0,115,6)
+        }
+    }
+}
